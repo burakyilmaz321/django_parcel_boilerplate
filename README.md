@@ -30,7 +30,6 @@ are some popular javascript packages included, such as:
 
 - Tailwind
 - Alpinejs
-- Preact
 - React
 - HTMX
 - Lit
