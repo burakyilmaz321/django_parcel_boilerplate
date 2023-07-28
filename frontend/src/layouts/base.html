@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html class="h-full">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static 'styles/global.css' %}">
+</head>
+
+<body class="h-full">
+	<!-- Header -->
+	{% component "header" %}
+
+	<!-- Main Content -->
+	{% block main %}{% endblock main %}
+</body>
+
+</html>
