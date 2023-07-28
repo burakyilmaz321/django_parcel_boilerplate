@@ -41,6 +41,7 @@ DJANGO_APPS = [
     "django.contrib.messages",
 ]
 THIRD_PARTY_APPS = [
+    "whitenoise.runserver_nostatic",
     "django_components",
     "django_components.safer_staticfiles",
 ]
@@ -53,6 +54,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -149,6 +151,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "frontend" / "dist",
     BASE_DIR / "frontend" / "public",
 ]
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
