@@ -17,6 +17,14 @@
       <p class="mt-4 text-gray-900">This is a Web Component build with Lit</p>
       <my-timer duration="7"></my-timer>
     </div>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <x-greeting name="Billy Jo"></x-greeting>
+    </div>
   </div>
 </main>
 {% endblock main %}
+
+{% block scripts %}
+<script src="{% static 'components/dropdown/index.js' %}"></script>
+<script src="{% static 'components/timer/my-timer.js' %}"></script>
+{% endblock scripts %}
