@@ -4,10 +4,6 @@
     "dev": "npx parcel watch ./src/**/*.{css,js,jsx}",
     "build": "npx parcel build ./src/**/*.{css,js,jsx}"
   },
-  "alias": {
-    "react": "preact-compat",
-    "react-dom": "preact-compat"
-  },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
@@ -23,6 +19,8 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
     "alpinejs": "^3.12.3",
     "htmx.org": "^1.9.4",
     "lit": "^2.7.6",
